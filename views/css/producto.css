@@ -8,12 +8,13 @@
 }
 
 #product-details{
-	border: 2px solid;
+	border: 3px solid;
 	border-radius: 25px;
     border-collapse: separate;
     border-spacing: 0;
     -moz-border-radius: 25px;
     text-align: center;
+    margin: 1em;
 }
 
 #product-details td{
@@ -23,12 +24,14 @@
 }
 
 #detail-center{
-	border: 2px solid;
+	border: 3px solid;
+	border-bottom: 0;
+	border-top: 0;
 }
 
 #product-reviews{
 	overflow: auto;
-	margin: 1em;
+		margin: 1em;
 }
 
 #product-options{
