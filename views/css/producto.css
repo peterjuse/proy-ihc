@@ -1,0 +1,42 @@
+/*Este es el css de la interfaz producto*/
+
+
+#product-details-container{
+	margin: inherit;
+	padding: inherit;
+
+}
+
+#product-details{
+	border: 3px solid;
+	border-radius: 25px;
+    border-collapse: separate;
+    border-spacing: 0;
+    -moz-border-radius: 25px;
+    text-align: center;
+    margin: 1em;
+}
+
+#product-details td{
+	font-style: italic;
+	border-spacing: 0;
+	width: 40%;
+}
+
+#detail-center{
+	border: 3px solid;
+	border-bottom: 0;
+	border-top: 0;
+}
+
+#product-reviews{
+	overflow: auto;
+		margin: 1em;
+}
+
+#product-options{
+	margin: inherit;
+	padding: inherit;
+	text-align: center;
+	width: 30%;
+}
