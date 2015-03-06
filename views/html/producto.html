@@ -3,8 +3,73 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Producto</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/producto.css"/>
 	</head>
 	<body>
-		Aqui va la pagina donde se muestra un producto
+		<header>
+			<!-- encabezado comun a todo el site, incluye banner, navbar y search -->
+		</header>
+		
+		<div class="container">
+			Pagina donde se muestra un Producto
+			<div id="product-details-container">
+				<table id="product-details">
+					<tr>
+						<td>
+							Imagen del producto
+						</td>
+						<td id="detail-center">
+							<p>
+								<b>Descripcion del producto</b>
+								<br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</td>
+						<td>
+							<div id="product-reviews">
+							<b>Resenhas del producto</b><br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="product-options">
+				<table>
+					<tr>
+						<td>
+							Boton volver
+						</td>
+						<td>
+							Boton agregar a carrito
+						</td>
+						<td>
+							Boton agregar a wishlist
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<footer>
+			<!-- pie de pagina, comun a todo el site -->
+		</footer>
+		<!--[JS para Bootstrap]-->
+		<script type="text/javascript" src="../../sources/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="../../sources/bootstrap.min.js"></script>
+		<!--[/JS para Bootstrap]-->
 	</body>
 </html>
