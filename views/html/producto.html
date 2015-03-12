@@ -2,16 +2,48 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Producto</title>
+		<!-- Bootstrap Core CSS -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.css"/>
+		<!-- Custom CSS -->
+		<link href="../../Templates/producto/css/portfolio-item.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/producto.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<header>
 			<!-- encabezado comun a todo el site, incluye banner, navbar y search -->
+			<!-- tomado de principal.html -->
+			<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9">
+							<a id="logo" href="principal.html"><img src="../imagenes/Logo-med.jpg"></a>		
+						</div>
+						<div class="navbar-header col-lg-3">
+							 <div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav">
+									<li><a class="btn btn-default" href="registro.html">Registro</a></li>
+									<li><a class="btn btn-default" href="login.html">Login</a></li>
+									<li><a 
+									class="btn btn-default" href="ayuda.html">Ayuda</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
 		</header>
 		
-		<div class="container">
+		<div class="container-general">
 			<br>Pagina donde se muestra un Producto
 			<div id="product-details-container">
 				<table id="product-details">
