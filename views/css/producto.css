@@ -1,10 +1,8 @@
 /*Este es el css de la interfaz producto*/
 
-
 #product-details-container{
 	margin: inherit;
 	padding: inherit;
-
 }
 
 #product-details{
@@ -12,17 +10,14 @@
 	border-radius: 25px;
     border-collapse: separate;
     border-spacing: 0;
-    text-align: center;
     margin: 1em;
-}
-
-#product-details td{
-	font-style: italic;
-	border-spacing: 0;
-	width: 40%;
+    text-align: justify;
 }
 
 #detail-center{
+	overflow: auto;
+	word-wrap: break-word;
+	max-height: 21em;
 	border: 3px solid;
 	border-bottom: 0;
 	border-top: 0;
@@ -30,12 +25,20 @@
 
 #product-reviews{
 	overflow: auto;
-		margin: 1em;
+	word-wrap: break-word;
+	max-height: 21em;
 }
 
-#product-options{
+#product-image{
+	margin-top: inherit;
+}
+
+#product-options td{
 	margin: inherit;
 	padding: inherit;
 	text-align: center;
-	width: 30%;
+	width: 30em;
+}
+table{
+	border-spacing: 20px;
 }
