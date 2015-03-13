@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>AppBox: Tu tienda de descarga de Software  - Categorias</title>
+	<title>AppBox: Tu tienda de descarga de Software</title>
 
 
 	<!--[Definicion de los CSS]-->
-	<link rel="stylesheet" type="text/css" href="/views/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/views/css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="/views/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/views/css/style_categoria.css">
+
+	<!--CSS de Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	
+	<!--CSS Customs-->
+	<link rel="stylesheet" type="text/css" href="../css/style_categoria.css">
+	<link rel="stylesheet" type="text/css" href="../css/shop-homepage.css">
+
 	<!--[/Definicion de los CSS]-->
 
 	
@@ -17,96 +23,195 @@
 </head>
 <body>
 	<!---[Parte del encabezado]-->
-	<div class="cabecera">
-		<div class="navbar-fixed-top main-menu-contianer">
-			<div class="contianer">
-				<a href="principal.html"><img src="/img/logo-borrador.jpeg" alt=""></a>
-			</div>
-		</div>
-	</div>
+	<header>
+		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.jpg">
+						</a>		
+					</div>
+					<div class="navbar-header col-lg-3">
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+   							<ul class="nav navbar-nav">
+       							<a class="btn btn-default" href="registro.html">Registro</a>
+       							<a class="btn btn-default" href="login.html">Login</a>
+							    <a class="btn btn-default" href="ayuda.html">Ayuda</a>
+						    </ul>
+       					</div>
+       				</div>
+        		</div>
+        	</div>
+        </nav>
+	</header>
 	<!---[/Parte del encabezado]-->
 
 
 	<!---[Parte del cuerpo de la pagina]-->
 	<!--recordar que las categorias de que se haran son las siguientes
 	ofimatica
-	Sistemas operativas
+	Sistemas operativos
 	aplicaciones multimedia
 	juegos
 	aplicaciones de desarrollo
 	aplicaciones de chat / redes sociales
 	aplicaciones de seguridad
+	aplicaciones moviles
 	-->
 
-	<div class="medio">
-		<div class="main">
-			<div class="mainContent">
-				<div class="cat">
-					<div class="titulocat">
-						<div class="namecat"></div>
-						<div class="namecat"></div>
-						<div class="namecat"></div>
-					</div>
-					<div class="contentcat">
-						<div class="imgcat"></div>
-						<div class="imgcat"></div>
-						<div class="imgcat"></div>
-					</div>
-				</div>
-				<div class="blanckspace"></div>
-				<div class="cat">
-					<div class="titulocat">
-						<div class ="namecat"></div>
-						<div class ="namecat"></div>
-						<div class ="namecat"></div>
-					</div>
-					<div class ="contentcat">
-						<div class ="imgcat"></div>	
-						<div class = "imgcat"></div>
-						<div class ="imgcat"></div>
-					</div>
-				</div>
-				<div class="blanckspace"></div>
-				<div class="cat">
-					<div class="titulocat">
-						<div class="namecat"></div>
-						<div class="namecat"></div>
-						<div class="namecat"></div>	
-				</div>
-					<div class="contentcat">
-						<div class="imgcat"></div>
-						<div class="imgcat"></div>
-						<div class="imgcat"></div>
-					</div>
-				</div>
-			</div>
+
+	<!-- Pestañas de navegacion-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="nav nav-tabs nav-justifieds">
+					<li class="disabled"><a href="principal.html"> Inicio</a></li>
+					<li class="active"><a href="categoria.html">Software</a></li>
+					<li class="disabled"><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</div>	
 		</div>
 	</div>
+
+	<!--Categorias de Software-->
+	<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                	Categorias de Software
+                    <small>Descarga todo lo que necesitas</small>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Ofimatica y Oficina</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Sistemas Operativos</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Internet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Juegos</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Multimedia y Entretenimiento</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Chat y Redes Sociales</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Seguridad</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Desarrollo</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+             <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Moviles</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+	</div>
+
+
+
 	<!---[/Parte del cuerpo de la pagina]-->
 
 	<!---[Parte del pie de pagina]-->
-	<div class="pieDePagina">
-		<h2>Desarrollado por:</h2>
-		<ul>
-			<li>
-				<h4>Maria Pulido</h4>
-			</li>
-			<li>
-				<h4>Pedro Boll</h4>
-			</li>
-			<li>
-				<h4>Javier Acosta</h4>
-			</li>
-		</ul>
-	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+		        <div class="col-lg-12">
+		        	<a href="faq.html">Preguntas Frecuentes</a>
+		           	<p>Desarrollado por:
+		           	<h5><b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b></h5>
+		            Copyright &copy; AppBox 2015</p>
+		       </div>
+		    </div>
+		</div>
+	</footer>
 	<!---[/Parte del pie de pagina]-->
 
 
 	<!--[Definicion de los scripts]-->
+	
+	<!--JQuery-->
 	<script type="text/javascript" src="/source/jquery-2.1.3.min.js"></script>	
+	
+	<!--Archivos Bootstrap en Javascript-->
 	<script type="text/javascript" src="/source/bootstrap.js"></script>
 	<script type="text/javascript" src="/source/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/source/bootstrap.js"></script>
+
 	<!--[/Definicion de los scripts]-->
+
 </body>
 </html>
