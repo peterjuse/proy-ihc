@@ -1,0 +1,5 @@
+$(".dropdown-menu li a").click(function(){
+	//$(this).parents(".btn-group").find('.cate1').text();
+ 	$(this).parents(".btn-group").find('.cate1').text($(this).text());
+  	$(this).parents(".btn-group").find('.cate1').val($(this).text());
+});

@@ -1,0 +1,62 @@
+.blue{
+    color: #3366ff;
+}
+
+header{
+	background-color: #ffffff;
+	} 
+
+body{
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer{
+	background-color: #3366ff; 
+	text-align: center;
+	color: #ffffff;
+}
+
+.col-lg-5{
+    padding: 1px;
+    width: 612px;
+    height: 66px;
+}
+
+
+.col-lg-7{
+    padding:1px;
+    width: 550px;
+}
+
+.navbar-form{
+    padding-top: 8px;
+    text-align: center;
+    color: #3366ff;
+}
+
+.form-group > .form-control{
+    width: 300px;
+}
+
+.navbar-header{
+    padding-top: 16px;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 378px;
+}
+
+.dropdown-menu{
+    text-align: left;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
