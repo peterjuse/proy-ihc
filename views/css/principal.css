@@ -5,13 +5,50 @@ header{
 
 body{
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-
 }
 
 footer{
 	background-color: #3366ff; 
 	text-align: center;
 	color: #ffffff;
+}
+
+.col-lg-5{
+    padding: 1px;
+    width: 612px;
+    height: 66px;
+}
+
+
+.col-lg-7{
+    padding:1px;
+    width: 550px;
+}
+
+.blue{
+    color: #3366ff;
+}
+
+.navbar-form{
+    padding-top: 8px;
+    text-align: center;
+    color: #3366ff;
+}
+
+.form-group > .form-control{
+    width: 300px;
+}
+
+.navbar-header{
+    padding-top: 16px;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 378px;
+}
+
+.dropdown-menu{
+    text-align: left;
 }
 
 .nav-tabs > li, .nav-pills > li {
@@ -25,6 +62,21 @@ footer{
     text-align:center;
 }
 
-.search-container {
-	text-align: center;
+.slide-image {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.carousel-holder {
+    margin-bottom: 10px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+	height: 300px;
+}
+.carousel{
+	background-color: #89A4F5;
 }
