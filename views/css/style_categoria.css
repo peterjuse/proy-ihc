@@ -1,5 +1,13 @@
 /*########## CSS DE CATEGORIA.HTML#########*/
 
+.carousels-inner{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100px    
+}
+
+
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
