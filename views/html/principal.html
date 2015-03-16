@@ -1,63 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"
+	<meta charset="utf-8">
 	<meta name="description" content="Pagina web de venta de software">
     <meta name="author" content="Javier Acosta, Pedro Boll y Maria Pulido">
+	
 	<title>AppBox: Tu tienda de descarga de Software</title>
+
+	<!-- CSS BOOTSTRAP-->
 	<link rel="stylesheet" type="text/css" media= "screen" href="../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.css">
-	<!-- Aqui ponemos nuestro css de estilo particular-->
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css">
+	
+	<!-- CSS CUSTOM-->
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/principal.css">
+	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
 </head>
 <body>
 	<header>
+
+		<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
 		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-9">
-						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.jpg">
-						</a>		
+					
+					<!---Logo de la pagina-->
+					<div class="col-lg-2 navbar-left">
+						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
+						</a>	
 					</div>
-					<div class="navbar-header col-lg-3">
-						<div class="collapse navbar-collapse navbar-ex1-collapse">
-   							<ul class="nav navbar-nav">
-       							<a class="btn btn-default" href="registro.html">Registro</a>
-       							<a class="btn btn-default" href="login.html">Login</a>
-							    <a class="btn btn-default" href="faq.html">Ayuda</a>
-						    </ul>
-       					</div>
-       				</div>
-        		</div>
-        	</div>
-        </nav>
-	</header>
+
+					<!--Barra de busqueda-->
+					<div class="col-lg-5">
+						<form class="navbar-form" role="search">
+							
+							<div class="btn-group">
+  								<button type="button" class="btn btn-default dropdown-toggle cate1" data-toggle="dropdown" aria-expanded="false">
+    								Categorias<span class="categoria"></span> <span class="caret"></span>
+  								</button>
+  								<ul class="dropdown-menu" role="menu">
+  									<li><a value="0" href="#" val>Todas las categorias</a></li>
+ 									<li class="divider"></li>
+    								<li><a value="1" href="#" val>Ofimatica y Oficina</a></li>
+    								<li><a value="2" href="#">Moviles</a></li>
+    								<li><a value="3" href="#">Internet</a></li>
+    								<li><a value="4" href="#">Juegos</a></li>
+    								<li><a value="5" href="#">Multimedia y Entretenimiento</a></li>
+    								<li><a value="6" href="#">Chat y Redes Sociales</a></li>
+    								<li><a value="7" href="#">Seguridad</a></li>
+    								<li><a value="8" href="#">Desarrollo</a></li>
+  								</ul>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Buscar">
+							</div>
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search blue"></span></button>
+						</form>
+					</div>
+
+					<!-- Botones de Sesion-->
+					<div class="navbar-header col-lg-5 navbar-right">
+						<div class="btn-group" role="group" aria-label="...">
+
+							<a class="btn btn-default" href="login.html">Iniciar Sesion</a>
+
+							<a class="btn btn-default" href="registro.html">Registrarse</a>
+
+							<!--Boton de carrito de compras-->
+  							<a class="btn btn-default">
+  								<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
+  							</a>
+  						</div>		
+					</div>
+				</div>	
+        	</nav>
+		</header>
 	
 	<!-- Pestañas de navegacion-->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<ul class="nav nav-tabs nav-justifieds">
-					<li><a href="principal.html"> Inicio</a></li>
-					<li class="active"><a href="categoria.html">Software</a></li>
-					<li ><a href="contacto.html">Contacto</a></li>
+					<li class="active">
+						<a href="principal.html">
+							<span class="glyphicon glyphicon-home blue"></span>
+							Inicio
+						</a>
+					</li>
+					<li><a href="categoria.html">Software</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="faq.html">Ayuda</a></li>
 				</ul>
 			</div>	
 		</div>
 	</div>
 
+	<!--Carrusel-->
 	<div class="container">
 		<hr>
-			<!-- Corazon INSERTA TU CODIGO AQUI ;) -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="search-container"> 
-					<input placeholder="Buscar..."><img src="../imagenes/buscar.jpg"></div>
-				</div>
-			</div>
-		</div>	
-
+		<div class="row carousel-holder">
+        	<div class="col-md-12">
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  	<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                    <li data-target="#mycarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active" >
+                        <img class="slide-image img-responsive" src="../imagenes/producto1.png" alt="Producto 1">
+                    </div>
+                    <div class="item">
+                        <img class="slide-image img-responsive" src="../imagenes/producto2.png" alt="Producto 2">
+                    </div>
+                     <div class="item">
+                        <img class="slide-image img-responsive" src="../imagenes/producto1.png" alt="Producto 3">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#mycarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        	</div>
+        </div>
 		<hr>
 	</div>
 
@@ -77,12 +149,14 @@
 	</footer>
 
 	 <!-- jQuery -->
-    <script src="../../source/jquery-2.1.3.min.js"></script>
+    <script src="../../sources/jquery-2.1.3.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../source/bootstrap.min.js"></script>
-    <script src="../../source/npm.js"></script>
+    <script src="../../sources/bootstrap.min.js"></script>
+    <script src="../../sources/npm.js"></script>
 
+    <!-- Scripts customs -->
+    <script type="text/javascript" src="../../sources/funciones_index.js"></script>
 </body>
-<!--A pesar de todo Maru... te amo bebe <3 -->
+
 </html>
