@@ -6,11 +6,12 @@
 }
 
 #product-details{
-	border: 3px solid;
-	/*border-radius: 25px;*/
+	/*border: 3px solid;
+	border-color: #3366ff; 
+	border-radius: 25px;*/
     border-collapse: separate;
     border-spacing: 0;
-    margin: 1em;
+    margin: 2em;
     text-align: justify;
 }
 
@@ -18,9 +19,10 @@
 	overflow: auto;
 	word-wrap: break-word;
 	max-height: 21em;
-	border: 3px solid;
+	/*border: 3px solid;
 	border-bottom: 0;
 	border-top: 0;
+	border-color: #3366ff;*/ 
 }
 
 #product-reviews{
@@ -31,6 +33,17 @@
 
 #product-image{
 	margin-top: inherit;
+	vertical-align: center;
+	width: 320px;
+	height: 240px;
+}
+
+#product-image:hover img {
+    -webkit-transform:scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:scale(1.20); /* Opera */
+     transform:scale(1.20);
 }
 
 #product-options td{
@@ -42,7 +55,7 @@
 
 
 footer{
-	background-color: #3366ff; 
+	background-color: #3366ff;
 	text-align: center;
 	color: #ffffff;
 	margin-bottom: 0;
