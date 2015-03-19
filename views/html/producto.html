@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--
-Ampliar img onhover,
-utilizar mas el azul,
+Ampliar img onhover, (listo)
+utilizar mas el azul, (listo)
 remover borde redondeado, (listo)
 ajustar segun login,
-sociabilidad,
+sociabilidad, (listo)
 accesibilidad
-    -->
+	-->
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -17,9 +17,12 @@ accesibilidad
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.css">
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" media="screen" href="../../Templates/producto/css/portfolio-item.css" \>
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/producto.css"/>
-		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<!-- CSS para social -->
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/social.css">
+		<!--<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -30,32 +33,82 @@ accesibilidad
 	<body>
 		<header>
 			<!-- encabezado comun a todo el site, incluye banner, navbar y search -->
-			<!-- tomado de principal.html -->
-		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8">
-						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
-						</a>		
-					</div>
-					<div class="navbar-header col-lg-4">
-						<div class="collapse navbar-collapse navbar-ex1-collapse">
-							<ul class="nav navbar-nav">
-								<a class="btn btn-default" href="registro.html">Registro</a>
-								<a class="btn btn-default" href="login.html">Iniciar Sesion</a>
-								<a class="btn btn-default" href="ayuda.html">Ayuda</a>
-							</ul>
+			<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
+			<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="row">
+						<!---Logo de la pagina-->
+						<div class="col-lg-2 navbar-left">
+							<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
+							</a>    
 						</div>
+
+						<!--Barra de busqueda-->
+						<div class="col-lg-5">
+							<form class="navbar-form" role="search">
+								
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle cate1" data-toggle="dropdown" aria-expanded="false">
+										Categorias<span class="categoria"></span> <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu">
+										<li><a value="0" href="#" val>Todas las categorias</a></li>
+										<li class="divider"></li>
+										<li><a value="1" href="#" val>Ofimatica y Oficina</a></li>
+										<li><a value="2" href="#">Moviles</a></li>
+										<li><a value="3" href="#">Internet</a></li>
+										<li><a value="4" href="#">Juegos</a></li>
+										<li><a value="5" href="#">Multimedia y Entretenimiento</a></li>
+										<li><a value="6" href="#">Chat y Redes Sociales</a></li>
+										<li><a value="7" href="#">Seguridad</a></li>
+										<li><a value="8" href="#">Desarrollo</a></li>
+									</ul>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Buscar">
+								</div>
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search blue"></span></button>
+							</form>
+						</div>
+
+						<!-- Botones de Sesion-->
+						<div class="navbar-header col-lg-5 navbar-right">
+							<div class="btn-group" role="group" aria-label="...">
+								<!--Boton desplegable de cuenta de usuario-->
+
+								<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">Iniciar Sesion</button>
+
+								<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">Registrarse</button>
+									
+								<!--Boton de carrito de compras-->
+								<a class="btn btn-default">
+									<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
+								</a>
+						</div>      
 					</div>
-				</div>
-			</div>
-		</nav>
+				</div>  
+			</nav>
+
 		</header>
-		
+		<!-- PESTAÑAS DE NAVEGACION-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="nav nav-tabs nav-justifieds">
+						<li><a href="principal.html"> <span class="glyphicon glyphicon-home blue"></span> Inicio </a></li>
+						<li class="active">
+							<a href="categoria.html"> <span class="glyphicon glyphicon-download blue"></span> Software</a>
+						</li>
+						<li><a href="contacto.html"><span class="glyphicon glyphicon-earphone blue"></span> Contacto</a></li>
+						<li><a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a></li>
+					</ul>
+				</div>  
+			</div>
+		</div>
 		<div class="container">
 			<!-- Encabezado (Titulo) -->
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-9">
 					<h1 class="page-header">Producto
 						<small>a mostrar</small>
 					</h1>
@@ -67,7 +120,6 @@ accesibilidad
 			<div class="row" id="product-details">
 				<!-- Item Image -->
 				<div class="col-md-4" id="product-image">
-					<!-- <img class="img-responsive" src="http://placehold.it/320x240" alt=""> -->
 					<!-- <img class="img-responsive" src="../imagenes/producto1.jpg" alt=""> -->
 					<img class="img-responsive" src="http://placehold.it/320x240" alt="">
 				</div>
@@ -88,8 +140,17 @@ accesibilidad
 			</div>			
 			<!-- /.row -->
 			<div class="row">
+				<div id="share">
+					Compartir via:
+					<!-- Twitter -->
+					<a href="#" title="Twitter" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+					 <!-- Facebook -->
+					<a href="#" title="Facebook" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+					<!-- Google+ -->
+					<a href="#" title="Google+" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+				</div>
 				<div class="col-md-12" id="product-reviews">
-					<h3>Resenhas del producto</h3><br>
+					<h3>Rese&ntilde;as:</h3><br>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod
 					<br>
@@ -120,38 +181,86 @@ accesibilidad
 			<!-- Fila de Botones -->
 			<div class="row">
 				<div class="btn-group btn-group-justified" role="group">
-					<a href="#1" class="btn btn-default glyphicon glyphicon-chevron-left" role="button">
+					<a href="#1" class="btn btn-default glyphicon glyphicon-chevron-left blue" role="button">
 						Volver
 					</a>
-					<a href="#2" class="btn btn-default glyphicon glyphicon-shopping-cart" role="button">
+					<a href="#2" class="btn btn-default glyphicon glyphicon-shopping-cart blue" role="button">
 						Agregar a carrito
 					</a>
-					<a href="#3" class="btn btn-default glyphicon glyphicon-plus-sign" role="button">
+					<a href="#3" class="btn btn-default glyphicon glyphicon-plus-sign blue" role="button">
 						Agregar a Lista de Deseos
 					</a>
 				</div>
 			</div>
 			<!-- /.row -->
 			<!-- Separador del footer -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header"></h1>
+				</div>
+			</div>
 		</div>
+
+	<!--PIE DE PAGINA-->
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<a class="h5 text-center " href="faq.html">Preguntas Frecuentes</a>
-					<p>Desarrollado por:
-						<b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b>
-					</p>
-					<p>Copyright &copy; AppBox 2015</p>
-			   </div>
-			</div>
+		        <div class="col-lg-12">
+		        	<p class="h5 text-center">Desarrollado por:</p>		           	
+		           	<p><b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b></p>	
+		           	<p>Copyright &copy; AppBox 2015</p>
+		       </div>
+		    </div>
 		</div>
 	</footer>
-	 <!-- jQuery -->
-	<script src="../../source/jquery-2.1.3.min.js"></script>
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="../../source/bootstrap.min.js"></script>
-	<script src="../../source/npm.js"></script>
-	</body>
+	<!-- Modal Inicio sesion-->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Inicio de Sesi&oacute;n</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Iniciar Sesi&oacute;n</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal Registro-->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Registro</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Registrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	 <!-- jQuery -->
+    <script src="../../sources/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../sources/bootstrap.min.js"></script>
+    <script src="../../sources/npm.js"></script>
+
+    <!-- Scripts customs -->
+    <script type="text/javascript" src="../../sources/funciones_index.js"></script>
+
+</body>
 </html>

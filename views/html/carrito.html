@@ -8,11 +8,11 @@
 	<title>AppBox: Tu tienda de descarga de Software</title>
 
 	<!-- CSS BOOTSTRAP-->
-	<link rel="stylesheet" type="text/css" media= "screen" href="../views/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="../views/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" media= "screen" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css">
 	
 	<!-- CSS CUSTOM-->
-	<link rel="stylesheet" type="text/css" href="../views/css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 
 </head>
 <body>
@@ -25,7 +25,7 @@
 					
 					<!---Logo de la pagina-->
 					<div class="col-lg-2 navbar-left">
-						<a id="logo" href="principal.html"><img src="../views/imagenes/Logo-peq.png">
+						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
 						</a>	
 					</div>
 
@@ -61,28 +61,12 @@
 						<div class="btn-group" role="group" aria-label="...">
   							<!--Boton desplegable de cuenta de usuario-->
 
-							<a class="btn btn-default" href="login.html">Iniciar Sesion</a>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">Iniciar Sesion</button>
 
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Registrarse</button>
-
-							<!--
-  							<div class="btn-group">	
-								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-								    Mi AppBox <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="registro.html">Registrate</a></li>
-								    <li><a href="login.html">Iniciar Sesion</a></li>
-								    <li class="divider"></li>
-								    <li><a href="#">Tus Ordenes</a></li>
-								    <li><a href="#">Tu Cuenta</a></li>
-								    <li><a href="#">Lista de Deseos</a></li>
-								</ul>
-							</div>
-							-->
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">Registrarse</button>
 
 							<!--Boton de carrito de compras-->
-  							<a class="btn btn-default">
+  							<a class="btn btn-default" href="carrito.html">
   								<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
   							</a>
   					</div>		
@@ -99,11 +83,9 @@
 					<li class="active">
 						<a href="principal.html"> <span class="glyphicon glyphicon-home blue"></span> Inicio </a>
 					</li>
-					<li ><a href="categoria.html">Software</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-					<li>
-						<a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a>
-					</li>
+					<li><a href="categoria.html"> <span class="glyphicon glyphicon-download blue"></span> Software</a></li>
+					<li><a href="contacto.html"><span class="glyphicon glyphicon-earphone blue"></span> Contacto</a></li>
+					<li><a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a></li>
 				</ul>
 			</div>  
 		</div>
@@ -122,19 +104,35 @@
 		<div class="container">
 			<div class="row">
 		        <div class="col-lg-12">
-		        	<a class="h5 text-center" href="faq.html">Preguntas Frecuentes</a>
-		           	<p>Desarrollado por:
-		           		<b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b>
-		           	</p>
+		        	<p class="h5 text-center">Desarrollado por:</p>		           	
+		           	<p><b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b></p>	
 		           	<p>Copyright &copy; AppBox 2015</p>
 		       </div>
 		    </div>
 		</div>
 	</footer>
+	
+	<!-- Modal Inicio sesion-->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Inicio de Sesi&oacute;n</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Iniciar Sesi&oacute;n</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-
-	|<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<!-- Modal Registro-->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">

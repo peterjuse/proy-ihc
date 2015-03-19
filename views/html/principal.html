@@ -12,96 +12,93 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css">
 	
 	<!-- CSS CUSTOM-->
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/principal.css">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
 </head>
 <body>
 	<header>
+			<!-- encabezado comun a todo el site, incluye banner, navbar y search -->
+			<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
+			<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="row">
+						<!---Logo de la pagina-->
+						<div class="col-lg-2 navbar-left">
+							<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
+							</a>    
+						</div>
 
-		<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
-		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="row">
-					
-					<!---Logo de la pagina-->
-					<div class="col-lg-2 navbar-left">
-						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
-						</a>	
+						<!--Barra de busqueda-->
+						<div class="col-lg-5">
+							<form class="navbar-form" role="search">
+								
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle cate1" data-toggle="dropdown" aria-expanded="false">
+										Categorias<span class="categoria"></span> <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu">
+										<li><a value="0" href="#" val>Todas las categorias</a></li>
+										<li class="divider"></li>
+										<li><a value="1" href="#" val>Ofimatica y Oficina</a></li>
+										<li><a value="2" href="#">Moviles</a></li>
+										<li><a value="3" href="#">Internet</a></li>
+										<li><a value="4" href="#">Juegos</a></li>
+										<li><a value="5" href="#">Multimedia y Entretenimiento</a></li>
+										<li><a value="6" href="#">Chat y Redes Sociales</a></li>
+										<li><a value="7" href="#">Seguridad</a></li>
+										<li><a value="8" href="#">Desarrollo</a></li>
+									</ul>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Buscar">
+								</div>
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search blue"></span></button>
+							</form>
+						</div>
+
+						<!-- Botones de Sesion-->
+						<div class="navbar-header col-lg-5 navbar-right">
+							<div class="btn-group" role="group" aria-label="...">
+								<!--Boton desplegable de cuenta de usuario-->
+								
+								<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">Iniciar Sesion</button>
+
+								<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">Registrarse</button>
+								<!--Boton de carrito de compras-->
+								<a class="btn btn-default" href="carrito.html">
+									<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
+								</a>
+						</div>      
 					</div>
-
-					<!--Barra de busqueda-->
-					<div class="col-lg-5">
-						<form class="navbar-form" role="search">
-							
-							<div class="btn-group">
-  								<button type="button" class="btn btn-default dropdown-toggle cate1" data-toggle="dropdown" aria-expanded="false">
-    								Categorias<span class="categoria"></span> <span class="caret"></span>
-  								</button>
-  								<ul class="dropdown-menu" role="menu">
-  									<li><a value="0" href="#" val>Todas las categorias</a></li>
- 									<li class="divider"></li>
-    								<li><a value="1" href="#" val>Ofimatica y Oficina</a></li>
-    								<li><a value="2" href="#">Moviles</a></li>
-    								<li><a value="3" href="#">Internet</a></li>
-    								<li><a value="4" href="#">Juegos</a></li>
-    								<li><a value="5" href="#">Multimedia y Entretenimiento</a></li>
-    								<li><a value="6" href="#">Chat y Redes Sociales</a></li>
-    								<li><a value="7" href="#">Seguridad</a></li>
-    								<li><a value="8" href="#">Desarrollo</a></li>
-  								</ul>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Buscar">
-							</div>
-							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search blue"></span></button>
-						</form>
-					</div>
-
-					<!-- Botones de Sesion-->
-					<div class="navbar-header col-lg-5 navbar-right">
-						<div class="btn-group" role="group" aria-label="...">
-
-							<a class="btn btn-default" href="login.html">Iniciar Sesion</a>
-
-							<a class="btn btn-default" href="registro.html">Registrarse</a>
-
-							<!--Boton de carrito de compras-->
-  							<a class="btn btn-default">
-  								<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
-  							</a>
-  						</div>		
-					</div>
-				</div>	
-        	</nav>
+				</div>  
+			</nav>
 		</header>
 	
 	<!-- Pestañas de navegacion-->
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<ul class="nav nav-tabs nav-justifieds">
-					<li class="active">
-						<a href="principal.html">
-							<span class="glyphicon glyphicon-home blue"></span>
-							Inicio
-						</a>
-					</li>
-					<li><a href="categoria.html">Software</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-					<li><a href="faq.html">Ayuda</a></li>
-				</ul>
-			</div>	
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="nav nav-tabs nav-justifieds">
+						<li class="active">
+							<a href="principal.html"> <span class="glyphicon glyphicon-home blue"></span> Inicio </a>
+						</li>
+						<li><a href="categoria.html"> <span class="glyphicon glyphicon-download blue"></span> Software</a></li>
+						<li><a href="contacto.html"><span class="glyphicon glyphicon-earphone blue"></span> Contacto</a></li>
+						<li><a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a></li>
+					</ul>
+				</div>  
+			</div>
 		</div>
-	</div>
-
 	<!--Carrusel-->
 	<div class="container">
 		<hr>
+		<div class="portfolio-item blue">
+			<h3><b>Lo más vendido</b></h3>
+		</div>
 		<div class="row carousel-holder">
-        	<div class="col-md-12">
-            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        	<div class="col-sm-8">
+            	<div id="mycarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   	<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#mycarousel" data-slide-to="1"></li>
@@ -109,16 +106,18 @@
                     <li data-target="#mycarousel" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
+                
                     <div class="item active" >
-                        <img class="slide-image img-responsive" src="../imagenes/producto1.png" alt="Producto 1">
+                        <img class="slide-image img-responsive" src="../imagenes/p1.png" alt="Producto 1">
                     </div>
                     <div class="item">
-                        <img class="slide-image img-responsive" src="../imagenes/producto2.png" alt="Producto 2">
+                        <img class="slide-image img-responsive" src="../imagenes/p2.png" alt="Producto 2">
                     </div>
                      <div class="item">
-                        <img class="slide-image img-responsive" src="../imagenes/producto1.png" alt="Producto 3">
+                        <img class="slide-image img-responsive" src="../imagenes/p3.png" alt="Producto 3">
                     </div>
                 </div>
+
                 <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Anterior</span>
@@ -127,26 +126,99 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Siguiente</span>
                 </a>
-            </div>
+            	</div>
+            	
         	</div>
+        	<div class="col-sm-4 portfolio-item">
+            		<h3><a href="#">Ofertas del Dia</a></h3>
+            		<img class="slide-image img-responsive" src="../imagenes/p8-peq.png" alt="Producto en Oferta">
+             		<p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.<a href="producto.html">Leer m&aacute;s...</a></h5></p>
+      		  </div>
         </div>
 		<hr>
 	</div>
+	<div class="container">
+		<div class="col-md-3 portfolio-item">
+             <a href="#">
+                <img class="img-responsive" src="../imagenes/p4.png" alt="Sugerencia 1">
+            </a>
+            <h3><a href="#">Producto 1</a></h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-3 portfolio-item">
+             <a href="#">
+                <img class="img-responsive" src="../imagenes/p5.png" alt="Sugerencia 2">
+            </a>
+            <h3><a href="#">Producto 2</a></h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-3 portfolio-item">
+             <a href="#">
+                <img class="img-responsive" src="../imagenes/p6.png" alt="Sugerencia 3">
+            </a>
+            <h3><a href="#">Producto 3</a></h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-3 portfolio-item">
+             <a href="#">
+                <img class="img-responsive" src="../imagenes/p7.png" alt="Sugerencia 4">
+            </a>
+            <h3><a href="#">Producto 4</a></h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+	</div>
 
 
+	<!--PIE DE PAGINA-->
 	<footer>
 		<div class="container">
 			<div class="row">
 		        <div class="col-lg-12">
-		        	<a class="h5 text-center " href="faq.html">Preguntas Frecuentes</a>
-		           	<p>Desarrollado por:
-		           		<b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b>
-		           	</p>
+		        	<p class="h5 text-center">Desarrollado por:</p>		           	
+		           	<p><b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b></p>	
 		           	<p>Copyright &copy; AppBox 2015</p>
 		       </div>
 		    </div>
 		</div>
 	</footer>
+
+	<!-- Modal Inicio sesion-->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Inicio de Sesi&oacute;n</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Iniciar Sesi&oacute;n</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal Registro-->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Registro</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Registrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	 <!-- jQuery -->
     <script src="../../sources/jquery-2.1.3.min.js"></script>
@@ -157,6 +229,6 @@
 
     <!-- Scripts customs -->
     <script type="text/javascript" src="../../sources/funciones_index.js"></script>
-</body>
 
+</body>
 </html>
