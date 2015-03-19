@@ -1,3 +1,15 @@
+.escondidito{
+    visibility: hidden;
+}
+
+.userBoton{
+    visibility:visible;
+}
+
+.mysize{
+    width: 275px;
+}
+
 .blue{
     color: #3366ff;
 }

@@ -10,3 +10,9 @@ $(document).ready(function(){
 		event.preventDefault();
     });
 });
+
+$("#login").click(function(){
+	$(".botonLogin").remove();
+	$(".botonReg").remove();
+	$("#botones-user").append("<button>Mi AppBox</button>");
+});
