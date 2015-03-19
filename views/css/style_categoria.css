@@ -1,11 +1,8 @@
 /*########## CSS DE CATEGORIA.HTML#########*/
 
-.carousels-inner{
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 100px    
-}
+/*.filita{
+    display:inline-block; 
+}*/
 
 
 .nav-tabs > li, .nav-pills > li {
