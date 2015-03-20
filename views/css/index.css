@@ -87,3 +87,9 @@ footer{
 .socialbtn{
     width: 80%;
 }
+
+.img-responsive{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
