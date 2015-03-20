@@ -15,7 +15,11 @@
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="../css/producto.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/social.css">
 	<style type="text/css">
+	.label{
+		font-size: 16px;
+	}
 	.no-js #loader { display: none;  }
 	.js #loader { display: block; position: absolute; left: 100px; top: 0; }
 	.se-pre-con {
@@ -67,17 +71,17 @@
 					</div>
 					<!-- Botones de Sesion-->
 					<div class="navbar-header col-lg-5 navbar-right">
-						<div class="btn-group" role="group" aria-label="...">
-							<!--Boton desplegable de cuenta de usuario-->
+						<div class="btn-group" id="botones-user" role="group" aria-label="...">
+  							<!--Boton desplegable de cuenta de usuario-->
 
-							<a class="btn btn-default" href="login.html">Iniciar Sesion</a>
+							<button type="button" class="btn btn-default botonLogin" data-toggle="modal" data-target="#myModal1">Iniciar Sesion</button>
 
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Registrarse</button>
+							<button type="button" class="btn btn-default botonReg" data-toggle="modal" data-target="#myModal2">Registrarse</button>
+
 							<!--Boton de carrito de compras-->
-							<a class="btn btn-default">
-								<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
-							</a>
-						</div>		
+  							<a class="btn btn-default" href="carrito.html">
+  								<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
+  							</a>	
 					</div>
 				</div>	
 			</div>
@@ -124,11 +128,13 @@
 			</div>
 			<div class="col-md-8">
 				<h3>Plataformas:</h3>
-				<span class="label label-success">Android &nbsp;<i class="fa fa-times"></i></span>, <span class="label label-primary">Windows &nbsp;<i class="fa fa-times"></i></span>, <span class="label label-light">Mac OS &nbsp;<i class="fa fa-times"></i></span>
+				<span class="label label-success">Android &nbsp;<i class="fa fa-times"></i></span>
+				<span class="label label-primary">Windows &nbsp;<i class="fa fa-times"></i></span>
+				<span class="label label-light">Mac OS &nbsp;<i class="fa fa-times"></i></span>
 				<br class="blue">
 				<h3>Categorias favoritas:</h3>
-				<span class="label label-default">Juegos <i class="fa fa-times"></i></span>,
-				<span class="label label-default">Moviles <i class="fa fa-times"></i></span>,
+				<span class="label label-default">Juegos <i class="fa fa-times"></i></span>
+				<span class="label label-default">Moviles <i class="fa fa-times"></i></span>
 				<span class="label label-default">Internet <i class="fa fa-times"></i></span>
 				<hr>
 				<h3>Datos personales: </h3>
@@ -157,42 +163,124 @@
 		<hr>
 	</div>
 
-
 	<!--PIE DE PAGINA-->
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<a class="h5 text-center" href="faq.html">Preguntas Frecuentes</a>
-					<p>Desarrollado por:
-						<b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b>
-					</p>
-					<p>Copyright &copy; AppBox 2015</p>
-			   </div>
-			</div>
+		        <div class="col-lg-12">
+		        	<p class="h5 text-center">Desarrollado por:</p>		           	
+		           	<p><b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b></p>	
+		           	<p>Copyright &copy; AppBox 2015</p>
+		       </div>
+		    </div>
 		</div>
 	</footer>
 
-
-	|<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<!-- Modal Inicio sesion-->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<h4 class="modal-title" id="myModalLabel">Registro</h4>
-		  </div>
-		  <div class="modal-body">
-			...
-		  </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-			<button type="button" class="btn btn-primary">Registrar</button>
-		  </div>
-		</div>
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title blue" id="myModalLabel">Inicio de Sesi&oacute;n</h2>
+	      </div>
+	      <div class="modal-body">
+	        <div class="container">
+	    		<div class="row">
+	    			<div class="col-sm-4 columModal">
+		    			<h3>Iniciar Sesi&oacute;n</h3>
+						<form action="login">
+							<div class="input-group input-group-sm mysize">						
+								<p>Correo electr&oacute;nico o nombre de usuario:</p>
+								<input type="text" id="user" class="form-control" placeholder="Ingrese su correo o usuario">
+							</div>
+							<br>
+							<div class="input-group input-group-sm mysize">
+								<p>Contrase&ntilde;a:</p>
+								<input type="password" id="password" class="form-control" placeholder="Ingrese su contrase&ntilde;a">
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-4 columModal">
+						<div>
+							<h3>Ingresa con tus redes sociales</h3>
+							<!-- Twitter -->
+							<br>
+							<a href="#" title="Twitter" class="socialbtn btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+							<br>
+							<!-- Facebook -->
+							<br>
+							<a href="#" title="Facebook" class="socialbtn btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+							<br>
+							<!-- Google+ -->
+							<br>
+							<a href="#" title="Google+" class="socialbtn btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+							<br>
+						</div>						
+					</div>
+	    		</div>
+	    	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-info" id="login">Iniciar Sesi&oacute;n</button>
+	      </div>
+	    </div>
 	  </div>
 	</div>
-
+	<!-- Modal Registro-->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title blue" id="myModalLabel">Registro</h2>
+	      </div>
+	      <div class="modal-body">
+	     	<div class="container">
+	    		<div class="row">
+	    			<h3>Registrese en nuestros servicios</h3>
+					<form action="register">
+						<div class="input-group input-group-sm mysize">						
+							<p>Nombre:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su nombre">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Apellido:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su apellido">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Correo electr&oacute;nico:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su correo electr&oacute;nico">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Seleccione un Usuario:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese un usuario">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">
+							<p>Contrase&ntilde;a:</p>
+							<input type="password" id="password" class="form-control" placeholder="Ingrese una contrase&ntilde;a">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">
+							<p>Repita la contrase&ntilde;a:</p>
+							<input type="password" id="password" class="form-control" placeholder="Ingrese nuevamente la contrase&ntilde;a">
+						</div>
+					</form>
+	    		</div>
+	    	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-info" id="signin" href="perfil.html">Registrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	 <!-- jQuery -->
 	<script src="../../sources/jquery-2.1.3.min.js"></script>
 
@@ -204,7 +292,6 @@
 	<script type="text/javascript" src="../../sources/funciones_index.js"></script>
 
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
 	$(window).load(function() {

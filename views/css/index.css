@@ -78,3 +78,7 @@ footer{
 .nav-tabs, .nav-pills {
     text-align:center;
 }
+
+.socialbtn{
+    width: 80%;
+}
