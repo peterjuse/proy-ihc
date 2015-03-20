@@ -16,7 +16,7 @@
 
 </head>
 <body>
-	<header>
+		<header>
 
 		<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
 		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
@@ -58,12 +58,12 @@
 
 					<!-- Botones de Sesion-->
 					<div class="navbar-header col-lg-5 navbar-right">
-						<div class="btn-group" role="group" aria-label="...">
+						<div class="btn-group" id="botones-user" role="group" aria-label="...">
   							<!--Boton desplegable de cuenta de usuario-->
 
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">Iniciar Sesion</button>
+							<button type="button" class="btn btn-default botonLogin" data-toggle="modal" data-target="#myModal1">Iniciar Sesion</button>
 
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">Registrarse</button>
+							<button type="button" class="btn btn-default botonReg" data-toggle="modal" data-target="#myModal2">Registrarse</button>
 
 							<!--Boton de carrito de compras-->
   							<a class="btn btn-default" href="carrito.html">
@@ -112,20 +112,35 @@
 		</div>
 	</footer>
 	
-	<!-- Modal Inicio sesion-->
+<!-- Modal Inicio sesion-->
 	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Inicio de Sesi&oacute;n</h4>
+	        <h2 class="modal-title blue" id="myModalLabel">Inicio de Sesi&oacute;n</h2>
 	      </div>
 	      <div class="modal-body">
-	        ...
+	        <div class="container">
+	    		<div class="row">
+	    			<h3>Inicia Sesi&oacute;n</h3>
+					<form action="login">
+						<div class="input-group input-group-sm mysize">						
+							<p>Correo electr&oacute;nico o nombre de usuario:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su correo o usuario">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">
+							<p>Contrase&ntilde;a:</p>
+							<input type="text" id="password" class="form-control" placeholder="Ingrese su contrase&ntilde;a">
+						</div>
+					</form>
+	    		</div>
+	    	</div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-	        <button type="button" class="btn btn-primary">Iniciar Sesi&oacute;n</button>
+	        <button type="button" class="btn btn-primary" id="login">Iniciar Sesi&oacute;n</button>
 	      </div>
 	    </div>
 	  </div>
@@ -137,14 +152,49 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Registro</h4>
+	        <h2 class="modal-title blue" id="myModalLabel">Registro</h2>
 	      </div>
 	      <div class="modal-body">
-	        ...
+	     	<div class="container">
+	    		<div class="row">
+	    			<h3>Registrese en nuestros servicios</h3>
+					<form action="register">
+						<div class="input-group input-group-sm mysize">						
+							<p>Nombre:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su nombre">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Apellido:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su apellido">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Correo electr&oacute;nico:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su correo electr&oacute;nico">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Seleccione un Usuario:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese un usuario">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">
+							<p>Contrase&ntilde;a:</p>
+							<input type="password" id="password" class="form-control" placeholder="Ingrese una contrase&ntilde;a">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">
+							<p>Repita la contrase&ntilde;a:</p>
+							<input type="password" id="password" class="form-control" placeholder="Ingrese nuevamente la contrase&ntilde;a">
+						</div>
+					</form>
+	    		</div>
+	    	</div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-	        <button type="button" class="btn btn-primary">Registrar</button>
+	        <button type="button" class="btn btn-primary" id="signin" href="perfil.html">Registrar</button>
 	      </div>
 	    </div>
 	  </div>
