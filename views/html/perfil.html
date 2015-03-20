@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Página web de venta de software">
+	<meta name="author" content="Javier Acosta, Pedro Boll y Maria Pulido">
+	
+	<title>AppBox: Tu tienda de descarga de Software</title>
+
+	<!-- CSS BOOTSTRAP-->
+	<link rel="stylesheet" type="text/css" media= "screen" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css">
+	
+	<!-- CSS CUSTOM-->
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/producto.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<style type="text/css">
+	.no-js #loader { display: none;  }
+	.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	.se-pre-con {
+		background: url(../imagenes/preloader.gif) center no-repeat #fff;
+	}
+	[class*='-light'] {
+		background-color:#f9f9f9;
+	    color:#999;
+	    border-color: #f9f9f9;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
+		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="row">
+					<!---Logo de la pagina-->
+					<div class="col-lg-2 navbar-left">
+						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
+						</a>	
+					</div>
+					<!--Barra de busqueda-->
+					<div class="col-lg-5">
+						<form class="navbar-form" role="search">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle cate1" data-toggle="dropdown" aria-expanded="false">
+									Categorias<span class="categoria"></span> <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a value="0" href="#" val>Todas las categorias</a></li>
+									<li class="divider"></li>
+									<li><a value="1" href="#" val>Oficina</a></li>
+									<li><a value="2" href="#">Moviles</a></li>
+									<li><a value="3" href="#">Internet</a></li>
+									<li><a value="4" href="#">Juegos</a></li>
+									<li><a value="5" href="#">Multimedia y Entretenimiento</a></li>
+									<li><a value="6" href="#">Chat y Redes Sociales</a></li>
+									<li><a value="7" href="#">Seguridad</a></li>
+									<li><a value="8" href="#">Desarrollo</a></li>
+								</ul>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Buscar">
+							</div>
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search blue"></span></button>
+						</form>
+					</div>
+					<!-- Botones de Sesion-->
+					<div class="navbar-header col-lg-5 navbar-right">
+						<div class="btn-group" role="group" aria-label="...">
+							<!--Boton desplegable de cuenta de usuario-->
+
+							<a class="btn btn-default" href="login.html">Iniciar Sesion</a>
+
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Registrarse</button>
+							<!--Boton de carrito de compras-->
+							<a class="btn btn-default">
+								<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
+							</a>
+						</div>		
+					</div>
+				</div>	
+			</div>
+		</nav>
+	</header>
+	
+	<!-- PESTAÑAS DE NAVEGACION-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="nav nav-tabs nav-justifieds">
+					<li class="active">
+						<a href="principal.html"> <span class="glyphicon glyphicon-home blue"></span> Inicio </a>
+					</li>
+					<li ><a href="categoria.html"> <span class="glyphicon glyphicon-download blue"></span> Software</a></li>
+					<li><a href="contacto.html"><span class="glyphicon glyphicon-earphone blue"></span> Contacto</a></li>
+					<li>
+						<a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a>
+					</li>
+				</ul>
+			</div>  
+		</div>
+	</div>
+
+	<!--CENTRO DE LA PAGINA-->
+	<div class="container">
+		<hr>
+		<!--AQUI VA EL CODIGO DEL CONTEXTO-->
+		<!-- Encabezado (Titulo) -->
+		<div class="row">
+			<div class="col-md-9">
+				<h1>Perfil
+					<small>de usuario</small>
+				</h1>
+			</div>
+		</div>
+		<!-- /.row -->
+		<div class="row">
+			<div class="col-md-4 se-pre-con" style="width: 320px; height: 240px;">
+				<br>
+			</div>
+			<div class="col-md-4" id="profile-pic" style="display:none; width: 320px; height: 240px;">
+				<img class="img-responsive" src="http://placehold.it/320x240" alt="">
+			</div>
+			<div class="col-md-8">
+				<h3>Plataformas:</h3>
+				<span class="label label-success">Android &nbsp;<i class="fa fa-times"></i></span>, <span class="label label-primary">Windows &nbsp;<i class="fa fa-times"></i></span>, <span class="label label-light">Mac OS &nbsp;<i class="fa fa-times"></i></span>
+				<br class="blue">
+				<h3>Categorias favoritas:</h3>
+				<span class="label label-default">Juegos <i class="fa fa-times"></i></span>,
+				<span class="label label-default">Moviles <i class="fa fa-times"></i></span>,
+				<span class="label label-default">Internet <i class="fa fa-times"></i></span>
+				<hr>
+				<h3>Datos personales: </h3>
+				<ul>
+					<li><b>Nombre y Apellido:</b> Usuario Muestra</li>
+					<li><b>Edad:</b> 3.14</li>
+					<li><b>Sexo:</b> H</li>
+					<li><b>Pais:</b> Tuvalu</li>
+					<li><b>Direccion:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</li>
+				</ul>
+				<br><br><small><a href="#">[Editar]</a></small>
+				<hr>
+				<h3>Informacion de pago: </h3>
+				<ul>
+					<li><b>Nombre y Apellido:</b> Usuario Muestra</li>
+					<li><b>Metodo de pago:</b> Tarjeta de Credito</li>
+					<li><b>Numero:</b> XXXX-XXXX-XXXX-2312</li>
+					<li><b>CVV:</b> 431</li>
+					<li><b>Balance (Credito):</b> 12.00$</li>
+				</ul>
+				<br><br><small><a href="#">[Editar]</a></small>
+			</div>
+		</div>
+
+		<hr>
+	</div>
+
+
+	<!--PIE DE PAGINA-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<a class="h5 text-center" href="faq.html">Preguntas Frecuentes</a>
+					<p>Desarrollado por:
+						<b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b>
+					</p>
+					<p>Copyright &copy; AppBox 2015</p>
+			   </div>
+			</div>
+		</div>
+	</footer>
+
+
+	|<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Registro</h4>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			<button type="button" class="btn btn-primary">Registrar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	 <!-- jQuery -->
+	<script src="../../sources/jquery-2.1.3.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../../sources/bootstrap.min.js"></script>
+	<script src="../../sources/npm.js"></script>
+
+	<!-- Scripts customs -->
+	<script type="text/javascript" src="../../sources/funciones_index.js"></script>
+
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").hide();
+		$("#profile-pic").toggle("slow");
+	});
+</script>
+</html>
