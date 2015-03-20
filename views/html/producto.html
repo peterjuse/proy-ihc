@@ -29,6 +29,13 @@ accesibilidad
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<style type="text/css">
+			.no-js #loader { display: none;  }
+			.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+			.se-pre-con {
+				background: url(../imagenes/preloader.gif) center no-repeat #fff;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -118,7 +125,10 @@ accesibilidad
 			<!-- Item Row -->
 			<div class="row" id="product-details">
 				<!-- Item Image -->
-				<div class="col-md-4" id="product-image">
+				<div class="col-md-4 se-pre-con" style="width: 320px; height: 240px;">
+					<br>
+				</div>
+				<div class="col-md-4" id="product-image" style="display:none;">
 					<!-- <img class="img-responsive" src="../imagenes/producto1.jpg" alt=""> -->
 					<img class="img-responsive" src="http://placehold.it/320x240" alt="">
 				</div>
@@ -243,15 +253,15 @@ accesibilidad
 							<h3>Ingresa con tus redes sociales</h3>
 							<!-- Twitter -->
 							<br>
-							<a href="#" title="Twitter" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+							<a href="#" title="Twitter" class="socialbtn btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
 							<br>
 							<!-- Facebook -->
 							<br>
-							<a href="#" title="Facebook" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+							<a href="#" title="Facebook" class="socialbtn btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
 							<br>
 							<!-- Google+ -->
 							<br>
-							<a href="#" title="Google+" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+							<a href="#" title="Google+" class="socialbtn btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
 							<br>
 						</div>						
 					</div>
@@ -317,7 +327,7 @@ accesibilidad
 	      </div>
 	    </div>
 	  </div>
-	</div>v>
+	</div>
 
 	 <!-- jQuery -->
     <script src="../../sources/jquery-2.1.3.min.js"></script>
@@ -328,6 +338,13 @@ accesibilidad
 
     <!-- Scripts customs -->
     <script type="text/javascript" src="../../sources/funciones_index.js"></script>
-
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+		$(window).load(function() {
+			// Animate loader off screen
+			$(".se-pre-con").hide();
+			$("#product-image").toggle("slow");
+		});
+	</script>
 </body>
 </html>
