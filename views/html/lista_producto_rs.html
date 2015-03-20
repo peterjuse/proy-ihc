@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<!--
-Ampliar img onhover, (listo)
-utilizar mas el azul, (listo)
-remover borde redondeado, (listo)
-ajustar segun login,(listo)
-sociabilidad, (listo)
-accesibilidad
-	-->
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>AppBox: Tu tienda de descarga de Software</title>
-		<!-- Bootstrap Core CSS -->
-		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css">
-		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="../css/index.css">
-		<link rel="stylesheet" type="text/css" href="../css/producto.css"/>
-		<!-- CSS para social -->
-		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/social.css">
-		<!--<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<!-HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<header>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Página web de venta de software">
+    <meta name="author" content="Javier Acosta, Pedro Boll y Maria Pulido">
+	
+	<title>AppBox: Tu tienda de descarga de Software</title>
+
+	<!-- CSS BOOTSTRAP-->
+	<link rel="stylesheet" type="text/css" media= "screen" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css">
+	
+	<!-- CSS CUSTOM-->
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/social.css">
+
+</head>
+<body>
+	<header>
 
 		<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
 		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
@@ -89,116 +76,152 @@ accesibilidad
 			</div>	
         </nav>
 	</header>
-		<!-- PESTAÑAS DE NAVEGACION-->
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<ul class="nav nav-tabs nav-justifieds">
-						<li><a href="principal.html"> <span class="glyphicon glyphicon-home blue"></span> Inicio </a></li>
-						<li class="active">
-							<a href="categoria.html"> <span class="glyphicon glyphicon-download blue"></span> Software</a>
-						</li>
-						<li><a href="contacto.html"><span class="glyphicon glyphicon-earphone blue"></span> Contacto</a></li>
-						<li><a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a></li>
-					</ul>
-				</div>  
-			</div>
+	
+	<!-- PESTAÑAS DE NAVEGACION-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="nav nav-tabs nav-justifieds">
+					<li>
+						<a href="principal.html"> <span class="glyphicon glyphicon-home blue"></span> Inicio </a>
+					</li>
+					<li class="active"><a href="categoria.html"> <span class="glyphicon glyphicon-download blue"></span> Software</a></li>
+					<li><a href="contacto.html"><span class="glyphicon glyphicon-earphone blue"></span> Contacto</a></li>
+					<li><a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a></li>
+				</ul>
+			</div>  
 		</div>
-		<div class="container">
-			<!-- Encabezado (Titulo) -->
-			<div class="row">
-				<div class="col-lg-9">
-					<h1 class="page-header">Producto
-						<small>a mostrar</small>
-					</h1>
-				</div>
-			</div>
-			<!-- /.row -->
+	</div>
 
-			<!-- Item Row -->
-			<div class="row" id="product-details">
-				<!-- Item Image -->
-				<div class="col-md-4" id="product-image">
-					<!-- <img class="img-responsive" src="../imagenes/producto1.jpg" alt=""> -->
-					<img class="img-responsive" src="http://placehold.it/320x240" alt="">
-				</div>
+	<!--CENTRO DE LA PAGINA-->
+	<div class="container">
+		<hr>
 
-				<div class="col-md-8" id="detail-center">
-					<h3>Precio: $$$</h3>
-					<h3>Descripci&oacute;n:</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-					<h3>Detalles:</h3>
-					<ul>
-						<li>Lorem Ipsum</li>
-						<li>Dolor Sit Amet</li>
-						<li>Consectetur</li>
-						<li>Adipiscing Elit</li>
-					</ul>
-				</div>
-				<!-- Item Reviews -->
-			</div>			
-			<!-- /.row -->
-			<div class="row">
-				<div id="share">
-					Compartir via:
-					<!-- Twitter -->
-					<a href="#" title="Twitter" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
-					 <!-- Facebook -->
-					<a href="#" title="Facebook" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
-					<!-- Google+ -->
-					<a href="#" title="Google+" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
-				</div>
-				<div class="col-md-12" id="product-reviews">
-					<h3>Rese&ntilde;as:</h3><br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod
-					<br>
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					<br>
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					<br>
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					<br>
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					<br>
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="page-header"></h1>
-				</div>
-			</div>
-			<!-- Fila de Botones -->
-			<div class="row">
-				<div class="btn-group btn-group-justified" role="group">
-					<a href="#1" class="btn btn-default glyphicon glyphicon-chevron-left blue" role="button">
-						<h class="letra">Volver</h>
-					</a>
-					<a href="#2" class="btn btn-default glyphicon glyphicon-shopping-cart blue" role="button">
-						<h class="letra">Agregar a carrito</h>
-					</a>
-					<a href="#3" class="btn btn-default glyphicon glyphicon-plus-sign blue" role="button">
-						<h class="letra">Agregar a Lista de Deseos</h>
-					</a>
-				</div>
-			</div>
-			<!-- /.row -->
-			<!-- Separador del footer -->
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="page-header"></h1>
-				</div>
-			</div>
-		</div>
+		<h2 class="blue"><b>Aplicaciones de Chat y Redes Sociales</b></h2>
+
+		<!-- Producto uno -->
+    	<div class="row">
+        	<div class="col-md-7">
+            	<a href="#">
+                	<img class="img-responsive" src="http://placehold.it/700x300" alt="">
+            	</a>
+        	</div>
+            <div class="col-md-5">
+                <h3>Producto 1</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    	<hr>
+
+    	<!-- Producto dos -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 2</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Producto tres -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 3</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Producto cuatro-->
+        <div class="row">
+
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 4</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Producto cinc o-->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 5</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+		<hr>
+	</div>
+
 
 	<!--PIE DE PAGINA-->
 	<footer>
@@ -212,7 +235,7 @@ accesibilidad
 		    </div>
 		</div>
 	</footer>
-
+	
 	<!-- Modal Inicio sesion-->
 	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
@@ -265,6 +288,7 @@ accesibilidad
 	    </div>
 	  </div>
 	</div>
+
 	<!-- Modal Registro-->
 	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
@@ -317,7 +341,7 @@ accesibilidad
 	      </div>
 	    </div>
 	  </div>
-	</div>v>
+	</div>
 
 	 <!-- jQuery -->
     <script src="../../sources/jquery-2.1.3.min.js"></script>
