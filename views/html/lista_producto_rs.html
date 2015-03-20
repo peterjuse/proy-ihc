@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Página web de venta de software">
+    <meta name="author" content="Javier Acosta, Pedro Boll y Maria Pulido">
+	
+	<title>AppBox: Tu tienda de descarga de Software</title>
+
+	<!-- CSS BOOTSTRAP-->
+	<link rel="stylesheet" type="text/css" media= "screen" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css">
+	
+	<!-- CSS CUSTOM-->
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/social.css">
+
+</head>
+<body>
+	<header>
+
+		<!-- BARRA DE BUSQUEDA, LOGIN Y LOGO DE LA APP-->
+		<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="row">
+					
+					<!---Logo de la pagina-->
+					<div class="col-lg-2 navbar-left">
+						<a id="logo" href="principal.html"><img src="../imagenes/Logo-peq.png">
+						</a>	
+					</div>
+
+					<!--Barra de busqueda-->
+					<div class="col-lg-5">
+						<form class="navbar-form" role="search">
+							<div class="btn-group">
+  								<button type="button" class="btn btn-default dropdown-toggle cate1" data-toggle="dropdown" aria-expanded="false">
+    								Categorias<span class="categoria"></span> <span class="caret"></span>
+  								</button>
+  								<ul class="dropdown-menu" role="menu">
+  									<li><a value="0" href="#" val>Todas las categorias</a></li>
+ 									<li class="divider"></li>
+    								<li><a value="1" href="#" val>Oficina</a></li>
+    								<li><a value="2" href="#">Moviles</a></li>
+    								<li><a value="3" href="#">Internet</a></li>
+    								<li><a value="4" href="#">Juegos</a></li>
+    								<li><a value="5" href="#">Multimedia y Entretenimiento</a></li>
+    								<li><a value="6" href="#">Chat y Redes Sociales</a></li>
+    								<li><a value="7" href="#">Seguridad</a></li>
+    								<li><a value="8" href="#">Desarrollo</a></li>
+  								</ul>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Buscar">
+							</div>
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search blue"></span></button>
+						</form>
+					</div>
+
+					<!-- Botones de Sesion-->
+					<div class="navbar-header col-lg-5 navbar-right">
+						<div class="btn-group" id="botones-user" role="group" aria-label="...">
+  							<!--Boton desplegable de cuenta de usuario-->
+
+							<button type="button" class="btn btn-default botonLogin" data-toggle="modal" data-target="#myModal1">Iniciar Sesion</button>
+
+							<button type="button" class="btn btn-default botonReg" data-toggle="modal" data-target="#myModal2">Registrarse</button>
+
+							<!--Boton de carrito de compras-->
+  							<a class="btn btn-default" href="carrito.html">
+  								<span class="glyphicon glyphicon-shopping-cart blue"></span> Carrito de compras
+  							</a>
+  					</div>		
+				</div>
+			</div>	
+        </nav>
+	</header>
+	
+	<!-- PESTAÑAS DE NAVEGACION-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="nav nav-tabs nav-justifieds">
+					<li>
+						<a href="principal.html"> <span class="glyphicon glyphicon-home blue"></span> Inicio </a>
+					</li>
+					<li class="active"><a href="categoria.html"> <span class="glyphicon glyphicon-download blue"></span> Software</a></li>
+					<li><a href="contacto.html"><span class="glyphicon glyphicon-earphone blue"></span> Contacto</a></li>
+					<li><a href="faq.html"> <span class="glyphicon glyphicon-question-sign blue"></span>&nbsp;Ayuda</a></li>
+				</ul>
+			</div>  
+		</div>
+	</div>
+
+	<!--CENTRO DE LA PAGINA-->
+	<div class="container">
+		<hr>
+
+		<h2 class="blue"><b>Aplicaciones de Chat y Redes Sociales</b></h2>
+
+		<!-- Producto uno -->
+    	<div class="row">
+        	<div class="col-md-7">
+            	<a href="#">
+                	<img class="img-responsive" src="http://placehold.it/700x300" alt="">
+            	</a>
+        	</div>
+            <div class="col-md-5">
+                <h3>Producto 1</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    	<hr>
+
+    	<!-- Producto dos -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 2</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Producto tres -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 3</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Producto cuatro-->
+        <div class="row">
+
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 4</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Producto cinc o-->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Producto 5</h3>
+                <h4>Descripci&oacute;n</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-info" href="#">Ver Producto <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+		<hr>
+	</div>
+
+
+	<!--PIE DE PAGINA-->
+	<footer>
+		<div class="container">
+			<div class="row">
+		        <div class="col-lg-12">
+		        	<p class="h5 text-center">Desarrollado por:</p>		           	
+		           	<p><b>Javier Acosta - Pedro Boll - Maria Eugenia Pulido</b></p>	
+		           	<p>Copyright &copy; AppBox 2015</p>
+		       </div>
+		    </div>
+		</div>
+	</footer>
+	
+	<!-- Modal Inicio sesion-->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title blue" id="myModalLabel">Inicio de Sesi&oacute;n</h2>
+	      </div>
+	      <div class="modal-body">
+	        <div class="container">
+	    		<div class="row">
+	    			<div class="col-sm-4 columModal">
+		    			<h3>Iniciar Sesi&oacute;n</h3>
+						<form action="login">
+							<div class="input-group input-group-sm mysize">						
+								<p>Correo electr&oacute;nico o nombre de usuario:</p>
+								<input type="text" id="user" class="form-control" placeholder="Ingrese su correo o usuario">
+							</div>
+							<br>
+							<div class="input-group input-group-sm mysize">
+								<p>Contrase&ntilde;a:</p>
+								<input type="password" id="password" class="form-control" placeholder="Ingrese su contrase&ntilde;a">
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-4 columModal">
+						<div>
+							<h3>Ingresa con tus redes sociales</h3>
+							<!-- Twitter -->
+							<br>
+							<a href="#" title="Twitter" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+							<br>
+							<!-- Facebook -->
+							<br>
+							<a href="#" title="Facebook" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+							<br>
+							<!-- Google+ -->
+							<br>
+							<a href="#" title="Google+" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+							<br>
+						</div>						
+					</div>
+	    		</div>
+	    	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-info" id="login">Iniciar Sesi&oacute;n</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal Registro-->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title blue" id="myModalLabel">Registro</h2>
+	      </div>
+	      <div class="modal-body">
+	     	<div class="container">
+	    		<div class="row">
+	    			<h3>Registrese en nuestros servicios</h3>
+					<form action="register">
+						<div class="input-group input-group-sm mysize">						
+							<p>Nombre:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su nombre">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Apellido:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su apellido">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Correo electr&oacute;nico:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese su correo electr&oacute;nico">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">						
+							<p>Seleccione un Usuario:</p>
+							<input type="text" id="user" class="form-control" placeholder="Ingrese un usuario">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">
+							<p>Contrase&ntilde;a:</p>
+							<input type="password" id="password" class="form-control" placeholder="Ingrese una contrase&ntilde;a">
+						</div>
+						<br>
+						<div class="input-group input-group-sm mysize">
+							<p>Repita la contrase&ntilde;a:</p>
+							<input type="password" id="password" class="form-control" placeholder="Ingrese nuevamente la contrase&ntilde;a">
+						</div>
+					</form>
+	    		</div>
+	    	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-info" id="signin" href="perfil.html">Registrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	 <!-- jQuery -->
+    <script src="../../sources/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../sources/bootstrap.min.js"></script>
+    <script src="../../sources/npm.js"></script>
+
+    <!-- Scripts customs -->
+    <script type="text/javascript" src="../../sources/funciones_index.js"></script>
+
+</body>
+</html>
